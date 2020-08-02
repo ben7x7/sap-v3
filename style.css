@@ -55,6 +55,7 @@ p {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar-brand {
@@ -64,12 +65,9 @@ p {
   color: #E68C0E;
 }
 
-.navbar-brand > span {
+#brand {
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
-}
-
-.navbar-brand > span:hover {
   color: #E68C0E;
 }
 
