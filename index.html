@@ -4,33 +4,310 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>LES SERVICES DE BENOIT</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- https://unpkg.com/aos@2.3.1/dist/aos.css -->
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <nav class="navbar-source">
-    <div class="logo">
-      <a href="#">
-        <img src="./images/favbellicon.png" alt="navbar logo" id="nav-logo">
-      </a>
+
+  <nav class="navbar my-navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="./images/favbellicon.png" alt="navbar logo" id="nav-logo">
       <span>LES SERVICES DE BENOIT</span>
-    </div>
-    <ul class="nav-links">
-      <li class="nav-item active">
-        <a href="#services">services</a>
-      </li>
-      <li class="nav-item">
-        <a href="#apropos">à propos</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact">contact</a>
-      </li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link mynav-link active" href="#">services <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mynav-link" href="#">à propos</a>
+        <a class="nav-item nav-link mynav-link" href="#">contact</a>
+      </div>
     </div>
   </nav>
+
+  <div class="section-home" id="one">
+    <div class="home">
+      <div class="home-body">
+        <h1 data-aos="zoom-out-down">Les Services de Benoît</h1>
+        <img src="./images/bell-orange.png" alt="logo" id="bell">
+        <p data-aos="zoom-in-up" data-aos-delay="500">Prestations à <br> domicile sur mesure</p>
+      </div>
+      <div class="home-footer">
+        <img src="./images/sap-change.png" alt="sap-logo" id="sap">
+        <img src="./images/paysdegex.png" alt="pays de gex logo" id="paysdegex">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-services" id="services">
+    <div class="services">
+      <div class="title-section title-services" data-aos="zoom-in-down" data-aos-once="true">
+        <h2>Services Proposés</h2>
+      </div>
+      <div class="services-content" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+        <p>Vous n'avez pas le temps, l'envie ou la patience pour certaines tâches de la vie quotidienne. </p>
+        <h4 id="benoit">Benoît est à votre service !</h4>
+      </div>
+    </div>
+    <div class="services-wrapper">
+      <div class="services-card" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
+        <img src="./images/icone-1.png" alt="icone assistance administrative" class="icones-services">
+        <h4>assistance administrative</h4>
+        <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#administrative">
+          En savoir plus
+        </button>
+      </div>
+      <div class="services-card" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
+        <img src="./images/icone-2.png" alt="icone assistance informatique" class="icones-services">
+        <h4>assistance informatique</h4>
+        <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#informatique">
+          En savoir plus
+        </button>
+      </div>
+      <div class="services-card" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
+        <img src="./images/icone-4.png" alt="icone bricolage" class="icones-services">
+        <h4>Petit Bricolage</h4>
+        <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#bricolage">
+          En savoir plus
+        </button>
+      </div>
+      <div class="services-card" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
+        <img src="./images/icone-5.png" alt="icone course & livraison" class="icones-services">
+        <h4>Courses & Livraisons</h4>
+        <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#livraison">
+          En savoir plus
+        </button>
+      </div>
+      <div class="services-card" data-aos="flip-left" data-aos-delay="100" data-aos-once="true">
+        <img src="./images/icone-6.png" alt="vigilance du domicile" class="icones-services">
+        <h4>Vigilance du domicile</h4>
+        <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#vigilance">
+          En savoir plus
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- MODALS -->
+  <div class="modal fade" id="administrative" tabindex="-1" role="dialog" aria-labelledby="assistanceAdmin">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./images/admin.png" alt="assistance administrative">
+          <h2 class="modal-title" id="assistanceAdmin">assistance administrative à domicile</h2>
+        </div>
+        <div class="modal-body" id="modal-admin">
+          <span>L'assistance administrative à domicile couvre des activités touchant aux formalités administratives quotidiennes.</span>
+          <ul class="liste-prestations">
+            <p>Elle couvre des activités telles que l'appui et l'aide:</p>
+            <li>Au traitement et classement de documents;</li>
+            <li>Au suivi de factures;</li>
+            <li>A la gestion du courrier;</li>
+            <li>Aux démarches administratives.</li>
+          </ul>
+          <h4>Plafond de dépenses</h4>
+          <p>Le plafond annuel des dépenses d'assistance administrative ouvrant droit au crédit d'impôt ne peut excéder <strong>12'000 €uros</strong>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal-exit" data-dismiss="modal">FERMEZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="informatique" tabindex="-1" role="dialog" aria-labelledby="assistanceInformatique" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./images/laptopn.jpg" alt="assistance informatique">
+          <h2 class="modal-title" id="assistanceInformatique">assistance informatique à domicile</h2>
+        </div>
+        <div class="modal-body" id="modal-informatique">
+          <span>La prestation comprend l'initiation ou la formation au fonctionnement du matériel informatique et aux logiciels non professionnels en vue de permettre leur utilisation courante.</span>
+          <br>
+          <p id="materiel-informatique">PC, Mac, tablette, smartphone</p>
+          <ul class="liste-prestations">
+          <p>La prestation comprend aussi, le cas échéant :</p>
+            <li>Installation et mise en service de votre ordinateur;</li>
+            <li>Configuration des logiciels à vos besoins;</li>
+            <li>Configuration de messagerie;</li>
+            <li>Traitement antivirus;</li>
+            <li>Partage d'astuces pour une meilleure utilisation.</li>
+          </ul>
+          <h4>Plafond de dépenses</h4>
+          <p>Le plafond annuel des dépenses d'assistance informatique ouvrant droit au crédit d'impôt ne peut excéder <strong>3'000 €uros</strong>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal-exit" data-dismiss="modal">FERMEZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bricolage" tabindex="-1" role="dialog" aria-labelledby="petitBricolage" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./images/tools.png" alt="bricolage">
+          <h2 class="modal-title" id="petitBricolage">petits travaux de bricolage</h2>
+        </div>
+        <div class="modal-body" id="modal-brico">
+          <span>L'activité de petit bricolage concerne des prestations de bricolage élémentaire qui ne nécessitent pas un savoir faire particulier dans un temps restreint.</span>
+          <ul class="liste-prestations">
+            <p>Elle concerne des prestations telles que:</p>
+            <li>Montage de meubles;</li>
+            <li>Petit travaux de peinture;</li>
+            <li>Fixation d'étagère, tableaux, tringles à rideaux;</li>
+            <li>Remplacement de joint;</li>
+            <li>Et bien d'autres...</li>
+          </ul>
+          <h4>Plafond de dépenses</h4>
+          <p>Le plafond annuel des dépenses de petit bricolage ouvrant droit au crédit d'impôt ne peut excéder <strong>500 €uros</strong>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal-exit" data-dismiss="modal">FERMEZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="livraison" tabindex="-1" role="dialog" aria-labelledby="livraisonsCourses" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./images/livraison.png" alt="coursesLivraisons">
+          <h2 class="modal-title" id="livraisonsCourses">Courses & livraisons</h2>
+        </div>
+        <div class="modal-body" id="modal-livraison">
+          <span>Cette activité s'inscrit dans un objectif de facilitation de la vie quotidienne des personnes.</span>
+          <ul class="liste-prestations">
+            <p>Il peut donc s'agir de:</p>
+            <li>Réception de vos livraisons à domicile;</li>
+            <li>Livraison de courses de produits du quotidien;</li>
+          </ul>
+          <h4>Conditions</h4>
+          <p>La prestation de livraison de courses ne peut être exercée qu'à condition d'être comprise dans une offre globale de services incluant une activité exercée au domicile.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal-exit" data-dismiss="modal">FERMEZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="vigilance" tabindex="-1" role="dialog" aria-labelledby="vigilanceDuDomicile" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="./images/vigilance.png" alt="vigilance du domicile">
+          <h2 class="modal-title" id="vigilanceDuDomicile">Vigilance du domicile en votre absence</h2>
+        </div>
+        <div class="modal-body" id="modal-vigilance">
+          <span>Cette prestation n'est pas un service de sécurité, avec vidéosurveillance, rondes et alarme. Il s'agit d'une vigilance simple de l'habitation principale ou secondaire pendant l'absence de son occupant habituel.</span>
+          <ul class="liste-prestations">
+          <p>La prestation comprend selon le cas échéant:</p>
+            <li>Inspection périodique du domicile;</li>
+            <li>Arrosage des plantes;</li>
+            <li>Relève du courrier;</li>
+            <li>Garde d'animaux;</li>
+            <li>Simulation de présence;</li>
+          </ul>
+          <h4>Plafond de dépenses</h4>
+          <p>Le plafond annuel des dépenses de vigilance du domicile ouvrant droit au crédit d'impôt ne peut excéder <strong>12'000 €uros</strong>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal-exit" data-dismiss="modal">FERMEZ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-coronavirus" id="coronavirus">
+    <div class="coronavirus">
+      <div class="title-section title-coronavirus" data-aos="zoom-in-down" data-aos-once="true">
+        <h2>special covid-19</h2>
+      </div>
+      <div class="coronavirus-text" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+        <p>Des mesures de protection ont été mises en place permettant des prestations à domicile dans le respect des règles d'hygiène préconisées par l'Etat et notamment des gestes barrières.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-info" id="info">
+    <div class="info-wrapper">
+      <div class="box-1">
+        <img src="./images/sap.png" alt="Services à la personne" id="icone-sap" data-aos="slide-right" data-aos-once="true">
+        <h2 data-aos="zoom-in-down" data-aos-once="true">avantages</h2>
+        <img src="./images/reduction.png" alt="Réduction d'impôts" id="icone-reduction" data-aos="slide-left" data-aos-once="true">
+      </div>
+      <div class="box-2">
+        <p>Les prestations de services d'aide à domicile vous permettent de bénéficier d'un avantage fiscal équivalent à 50% de vos dépenses, dans la limite des plafonds autorisés.</p>
+        <p>En janvier 2021, vous recevrez une attestation fiscale reprenant la nature des prestations fournies, les sommes réglées pour l'année précédente. Cette attestation et les factures reçues seront à conserver comme justificatif pour votre déclaration de revenus 2020.</p>
+      </div>
+      <div class="separateur text-center m-5">
+        <img src="./images/separateur.png" alt="separateur" class="separateur">
+      </div>
+      <div class="text-center">
+        <h2 data-aos="zoom-in-down" data-aos-once="true">les tarifs</h2>
+        <p>Les tarifs varient selon la prestation de service demandée ainsi que de la fréquence d'intervention.</p>
+        <div class="separateur text-center m-5">
+          <img src="./images/separateur.png" alt="separateur" class="separateur">
+        </div>
+        <p><strong>Un devis gratuit</strong> personnalisé vous sera remis pour toute prestation ou ensemble de prestations dont le prix total est supérieur ou égal à 100 €, ou sur demande si le prix est inférieur.</p>
+      </div>
+      <div class="text-muted" id="declaration">
+        Les Services de Benoît font l'objet d'une déclaration auprès de l'Organisme des Services à la Personne <br>n°: SAP
+      </div>
+    </div>
+  </div>
+
+  <div class="section-apropos" id="apropos">
+    <div class="title-section title-apropos" data-aos="zoom-in-down" data-aos-once="true">
+      <h2>à propos</h2>
+    </div>
+    <div class="apropos">
+      <div class="avatar">
+        <img src="./images/avatar.jpg" alt="avatar" id="avatar">
+        <h4>Benoît</h4>
+      </div>
+      <div class="profile" data-aos="zoom-out" data-aos-once="true">
+        <p>Plus de 20 années d'expérience, à l'écoute et au service d'une clientèle française et internationale à la réception d'hôtels et dans les services aux expatriés.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-contact" id="contact">
+    <div class="title-section title-contact" data-aos="zoom-in-down" data-aos-once="true">
+      <h2>contactez-moi</h2>
+    </div>
+    <div class="form-wrapper">
+      <div class="contact-infos">
+        <div class="phone" data-aos="slide-left" data-aos-delay="100" data-aos-once="true">
+          <i class="fas fa-phone"></i>
+          09.72.53.28.80
+        </div>
+        <div class="mail" data-aos="slide-right" data-aos-delay="100" data-aos-once="true">
+          <i class="far fa-envelope"></i>
+          benoit@servicesdebenoit.com
+        </div>
+      </div>
+      <form action="https://formspree.io/xeqrpboq" method="POST" >
+        <input type="text" name="name" id="full-name" autocomplete="off" required placeholder="Votre Nom" />
+        <input type="email" name="_replyto" autocomplete="off" required placeholder="Votre Adresse Email"/>
+        <input type="phone" name="phone" autocomplete="off" required placeholder="Votre Numéro de téléphone"/>
+        <textarea row="3" name="message" id="message" required placeholder="Votre Message..."></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
+        <input type="submit" value="Envoyer" class="btn-contact">
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
 </html>
