@@ -1,86 +1,76 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 1200px;
+  text-align: center;
+  background: #393939;
 }
-
 h1, h2, h3, h4 {
   font-family: 'Bebas Neue', cursive !important;
 }
-
 h1 {
   font-size: 60px!important;
 }
-
 h2 {
   font-size: 40px !important;
 }
-
 h3 {
   font-size: 32px !important;
 }
-
 h4 {
   font-size: 24px !important;
 }
-
 p {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
 }
-
 .section-services,
 .section-apropos,
 .section-contact,
 .section-info {
   padding: 96px 15px;
 }
-
 .title-section {
   text-align: center;
   margin: 0 auto;
 }
-
 /*******************************
            NAVBAR
 *******************************/
-
 .my-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
   background-color: #393939;
-  padding: 0px 40px;
+  padding: 0px;
   position: sticky;
   top: 0;
-  width: 100%;
+  margin: 0 auto;
   z-index: 1000;
+  max-width: 1200px;
 }
-
 .navbar-brand {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #E68C0E;
 }
-
 #brand {
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   color: #E68C0E;
 }
-
 #nav-logo {
-  padding-right: 10px;
+  padding:0 10px 0 40px;
   height: 30px;
 }
-
 .navbar-nav {
-  width: 80%;
+  width: 50%;
   justify-content: space-around;
 }
-
 a.nav-item.nav-link.mynav-link {
   color: #F1E4D3;
   font-family: 'Bebas Neue', cursive !important;
@@ -88,27 +78,21 @@ a.nav-item.nav-link.mynav-link {
   letter-spacing: 1px;
   font-size: 18px;
 }
-
 a.nav-item.nav-link.mynav-link:hover {
   color: #E68C0E;
   text-decoration: none;
 }
-
 button.navbar-toggler {
   color: #F1E4D3 !important;
 }
-
 /*******************************
          SECTION HOME
 *******************************/
-
 .section-home {
   background-color: #393939;
   background-size: cover;
-  height: 90vh;
   color: #F1E4D3;
 }
-
 .home {
   height: 100%;
   max-width: 900px;
@@ -117,60 +101,47 @@ button.navbar-toggler {
   flex-direction: column;
   justify-content: space-around;
 }
-
 #bell {
   margin: 30px 0px 40px 0px;
 }
-
 #one p {
   font-size: 24px !important;
   font-style: italic;
 }
-
 .home-body {
   margin: 0 auto;
   text-align: center;
 }
-
 .home-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 #sap {
   height: 70px;
 }
-
 #paysdegex {
   height: 40px;
 }
-
 /*******************************
          SECTION SERVICES
 *******************************/
-
 .section-services {
   background-color: #F9F7F7;
 }
-
 #services p {
   color: #9B9B9B;
   margin-bottom: 0 !important;
 }
-
 .services-content {
   text-align: center;
 }
-
 h4#benoit {
   color: #E68C0E;
 }
-
 #services h4 {
   line-height: 2rem;
 }
-
 .services-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -178,7 +149,6 @@ h4#benoit {
   justify-content: center;
   max-width: 900px;
 }
-
 .services-card {
   width: 250px;
   margin: 20px 20px;
@@ -193,12 +163,10 @@ h4#benoit {
   border-radius: 8px;
   box-shadow: 0px 0px 10px -4px rgba(155,155,155,.6);
 }
-
 .icones-services {
   height: 80px;
   margin-bottom: 20px;
 }
-
 .btn-modal {
   cursor: pointer;
   margin-top: 20px;
@@ -209,78 +177,63 @@ h4#benoit {
   color: #E68C0E !important;
   font-family: 'Montserrat', sans-serif;
 }
-
 .btn-modal:hover {
   color: #FFFFFF !important;
   background-color: #E68C0E;
 }
-
 /*******************************
          SECTION MODAL
 *******************************/
-
 .modal {
   margin-top: 20px;
 }
-
 .modal-dialogue {
   margin: 0 auto !important;
 }
-
 .modal-content {
   padding: 25px 40px;
 }
-
 .modal-header {
   display: flex;
   align-items: center !important;
   justify-content: space-between;
 }
-
 .modal-header img {
   height: 200px;
+  width: 160px;
   margin-right: 15px;
 }
-
 .modal-title {
   text-align: center;
   width: 100%;
 }
-
 .modal-body {
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: justify;
 }
-
 .modal-body span {
   color: #9B9B9B;
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
 }
-
 #materiel-informatique {
   font-style: italic;
   padding-top: 20px;
   text-align: center;
 }
-
 .modal-body ul {
   margin: 30px 0px;
+  padding: 0;
 }
-
 .modal-body li {
   margin-left: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   text-align: left;
 }
-
 .modal-footer {
   justify-content: center !important;
 }
-
 .btn-modal-exit {
   border: 2px solid #E68C0E !important;
   border-radius: 50px !important;
@@ -289,64 +242,55 @@ h4#benoit {
   padding: 10px 20px !important;
   font-weight: bold !important;
 }
-
 .btn-modal-exit:hover {
  font-weight: bold !important;
  background-color: #FFFFFF !important;
  color: #E68C0E !important;
 }
-
 /*******************************
          SECTION CORONAVIRUS
 *******************************/
-
 .section-coronavirus {
   text-align: center;
   background-color: #E68C0E;
   background-size: cover;
   color: #FFFFFF;
 }
-
 .coronavirus {
   max-width: 700px;
   margin: 0px auto;
   padding: 50px 15px;
 }
-
 #coronavirus p {
   font-style: italic;
 }
-
 /*******************************
          SECTION INFO
 *******************************/
-
+.section-info {
+  background-color: #FFFFFF;
+}
 .logos-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 #info p {
   text-align: justify;
 }
-
 .info-wrapper {
   max-width: 700px;
   margin: 0 auto;
 }
-
 .box-1 {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #icone-sap {
   width: 150px;
 }
-
 #icone-reduction {
   width:100px;
   margin-left: 20px;
@@ -354,11 +298,10 @@ h4#benoit {
 .box-2 {
   text-align: center;
 }
-
 .separateur {
   text-align: center;
+  height: 50px;
 }
-
 #declaration {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -366,26 +309,21 @@ h4#benoit {
   margin-top: 30px;
   text-align: center;
 }
-
 /*******************************
          SECTION A PROPOS
 *******************************/
-
 .section-apropos {
   background-color: #F1E4D3;
   background-size: cover;
 }
-
 .apropos {
   max-width: 700px;
   margin: 0px auto;
   padding: 50px 15px;
 }
-
 .avatar {
   text-align: center;
 }
-
 .avatar img {
   height: 140px;
   width: 140px;
@@ -394,35 +332,28 @@ h4#benoit {
   object-fit: fill;
   margin-bottom: 20px;
 }
-
 .profile p {
   text-align: center;
   font-style: italic;
 }
-
 /*******************************
          SECTION CONTACT
 *******************************/
-
 .section-contact {
   background-image: url('https://res.cloudinary.com/bessiere/image/upload/v1595606967/Background/map-image.png');
   background-size: cover;
-  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 #contact {
   background-color: #393939;
 }
-
 #contact img {
   height: 90vh;
 }
-
 #contact h2 {
   color: #FFFFFF;
 }
@@ -432,31 +363,26 @@ h4#benoit {
   padding: 30px 15px;
   border-radius: 5px;
 }
-
 .contact-infos {
   color: #FFFFFF;
   margin-bottom: 30px;
   font-size: 21px;
 }
-
 .contact-infos a {
   color: #FFFFFF;
 }
-
 .fa-envelope,
 .fa-phone {
   color: #E68C0E;
   font-size: 24px;
   margin-right: 5px;
 }
-
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 input, textarea {
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -465,15 +391,12 @@ input, textarea {
   color: #393939;
   outline-color: #E68C0E !important;
 }
-
 input {
   height: 50px;
 }
-
 textarea {
   height: 96px;
 }
-
 .btn-contact {
   color: #FFFFFF !important;
   padding: 10px 25px !important;
@@ -483,7 +406,6 @@ textarea {
   border-radius: 5px !important;
   width: 150px !important;
 }
-
 .btn-contact:hover {
   border: 3px solid #E68C0E !important;
   background-color: #FFFFFF !important;
@@ -502,28 +424,41 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px){
-
-  .home-body {
-    width: 400px;
-  }
-
-  .home-footer {
-    justify-content: space-between;
-    padding: 0px 50px;
-  }
-
-  .separateur {
-    height: 60px;
-  }
-
-  .form-wrapper {
-    width: 100%;
+@media screen and (min-width: 768px){
+  .section-home,
+  .section-contact {
+    height: 90vh;
   }
 }
 
-
-
-
-
-
+@media screen and (max-width: 576px){
+  .home-body {
+    width: 100%;
+  }
+  .home-footer {
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  #icone-reduction {
+    width: 60px;
+  }
+  #icone-sap {
+    width: 120px;
+  }
+  .separateur {
+    height: 40px;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .modal-dialogue {
+    width: auto;
+  }
+  .modal-content {
+  padding: 25px 10px;
+  }
+  #ben {
+    font-size: 40px !important;
+    padding-top: 40px;
+  }
+}
