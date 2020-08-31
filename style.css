@@ -103,6 +103,20 @@ button.navbar-toggler {
 }
 #bell {
   margin: 30px 0px 40px 0px;
+  animation: shack 700ms linear 600ms forwards;
+  transition: all .5s ease;
+}
+
+@keyframes shack {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
 #one p {
   font-size: 24px !important;
@@ -453,6 +467,9 @@ textarea {
   }
   .modal-dialogue {
     width: auto;
+  }
+  .modal-header img {
+    display: none;
   }
   .modal-content {
   padding: 25px 10px;
