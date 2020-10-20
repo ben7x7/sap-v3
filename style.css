@@ -103,7 +103,7 @@ button.navbar-toggler {
 }
 #bell {
   margin: 30px 0px 40px 0px;
-  animation: shack 700ms linear 600ms forwards;
+  animation: shack 700ms linear 5s forwards;
   transition: all .5s ease;
 }
 
@@ -136,6 +136,41 @@ button.navbar-toggler {
 }
 #paysdegex {
   height: 40px;
+}
+
+.intro {
+  background-color: #393939;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  background-color: #393939;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+.intro-text {
+  color: #F1E4D3;
+  font-size: 2.5rem;
+}
+.hide {
+  background-color: #393939;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
 }
 /*******************************
          SECTION SERVICES
@@ -446,6 +481,9 @@ textarea {
 }
 
 @media screen and (max-width: 576px){
+  h1.hide {
+    font-size: 2rem !important;
+  }
   .home-body {
     width: 100%;
   }
