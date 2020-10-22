@@ -148,6 +148,7 @@ button.navbar-toggler {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1050;
 }
 
 .slider {
@@ -160,6 +161,7 @@ button.navbar-toggler {
   transform: translateY(100%);
 }
 .intro-text {
+  background-color: #393939;
   color: #F1E4D3;
   font-size: 2.5rem;
 }
@@ -461,6 +463,54 @@ textarea {
   color: #E68C0E !important;
 }
 
+/*******************************
+         FOOTER
+*******************************/
+
+footer {
+  background-color: #393939;
+  width: 100%;
+  min-height: 10vh;
+  color: #B7B3B3;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+}
+.modal-legales {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F9F7F7;
+  color: #393939;
+}
+.btn-legales {
+  border: none !important;
+  color: #B7B3B3;
+  font-size: 14px;
+}
+.btn-legales:hover {
+  color: #B7B3B3;
+}
+.modal-dialog-legales {
+  max-width: 900px;
+  padding: 20px 15px;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/*******************************
+         MEDIA LAPTOP
+*******************************/
+
 @media screen and (max-width: 992px){
   .navbar-nav {
     width: 100%;
@@ -479,7 +529,9 @@ textarea {
     height: 90vh;
   }
 }
-
+/*******************************
+         MEDIA PHONES
+*******************************/
 @media screen and (max-width: 576px){
   h1.hide {
     font-size: 2rem !important;
